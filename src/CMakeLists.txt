@@ -12,7 +12,9 @@ add_library(edit_static STATIC)
 add_library(WinEditLine::edit_static ALIAS edit_static)
 
 set_target_properties(edit_static PROPERTIES
-  PUBLIC_HEADER editline/readline.h histedit.h)
+  PUBLIC_HEADER editline/readline.h
+  PUBLIC_HEADER histedit.h
+)
 
 target_sources(edit_static 
   PRIVATE 
